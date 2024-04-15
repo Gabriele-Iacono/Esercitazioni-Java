@@ -8,13 +8,16 @@ public class OperatoriLogici {
         esercizio.EsercizioQuattro();
         esercizio.EsercizioCinque();
         esercizio.EsercizioSei();
+        esercizio.EsercizioSette();
+        esercizio.EsercizioOtto();
+
     }
 }
 class Esercizio {
     public void EsercizioUno() {
 //h Scrivi un programma Java che verifichi se un numero è compreso tra 10 e 20. Utilizza gli operatori logici.
         int numero = 15;
-        if(numero >= 10 && numero <= 20){
+        if (numero >= 10 && numero <= 20) {
             System.out.println("Il numero è compreso tra 10 e 20");
         }
     }
@@ -27,7 +30,7 @@ class Esercizio {
     }
 
     public void EsercizioTre() {
-       // Scrivi un programma Java che verifichi se una stringa è vuota o null.
+        // Scrivi un programma Java che verifichi se una stringa è vuota o null.
         String testo = "";
 // ? se la stringa è nulla o la stringa è vuota, stampa..
         if (testo == null || testo.isEmpty()) {
@@ -40,9 +43,8 @@ class Esercizio {
         int numero = 15;
 //
         if (numero % 2 != 0) {
-            System.out.println("Il numero è dispari " + numero );
-        }
-        else {
+            System.out.println("Il numero è dispari " + numero);
+        } else {
             System.out.println("Il numero è pari " + numero);
         }
     }
@@ -53,7 +55,7 @@ class Esercizio {
         int numero = 15;
         int numero1 = 25;
         int numero2 = 5;
-        if (numero>numero1 && numero>numero2){
+        if (numero > numero1 && numero > numero2) {
             System.out.println(numero);
         }
         if (numero1 > numero && numero1 > numero2) {
@@ -66,18 +68,43 @@ class Esercizio {
 
     public void EsercizioSei() {
         //  chiede all’utente di inserire tre numeri interi
-        //e stampa su un’unica riga in ordine decrescente.
+        //  e stampa su un’unica riga in ordine decrescente.
         int numero3 = 3;
         int numero2 = 2;
         int numero1 = 1;
-        if (numero3>numero2 ){
-            if (numero2>numero1){
-                System.out.println(""+ numero3 + numero2 + numero1);
-            }
-            else {
+        if (numero3 > numero2) {
+            if (numero2 > numero1) {
+                System.out.println("" + numero3 + numero2 + numero1);
+            } else {
                 System.out.println("" + numero3 + numero1 + numero2);
             }
         }
+    }
+
+    public void EsercizioSette() {
+        //Scrivi un programma Java che determini se una persona è maggiorenne.
+        // La persona è maggiorenne se ha almeno 18 anni.
+        int eta = 18;
+        if (eta >= 18) {
+            System.out.println("Sei maggiorenne");
+        }
+        else {
+            System.out.println("Sei minorenne");
+        }
+    }
+    public void EsercizioOtto(){
+        //Scrivi un programma Java che verifichi se un numero è negativo o zero.
+        int numero = 0;
+        if (numero>0){
+            System.out.println("Il numero è positivo");
+        }
+        else if (numero<0){
+            System.out.println("Il numero è negativo");
+        }
+        else{
+            System.out.println("Il numero è zero");
+        }
+
     }
 }
 
