@@ -9,7 +9,7 @@ public class ForEachLoop {
        esercizi4.EsercizioTre();
         esercizi4.EsercizioQuattro();
        esercizi4.EsercizioCinque();
-//        esercizi4.EsercizioSei();
+       esercizi4.EsercizioCinquev2();
 //        esercizi4.EsercizioSette();
     }
 }
@@ -68,19 +68,30 @@ class Esercizi4{
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public void EsercizioCinquev2() {
+        ArrayList<Animali> animali = new ArrayList<>();
+        animali.add(new Animali("Cane", 10));
+        animali.add(new Animali("Gatto", 11));
+        animali.add(new Animali("Falco", 12));
+        for (Animali animale : animali){
+            String messaggio = String.format("L'animale %s ha %d anni", animale.getNome(), animale.getEta());
+            System.out.println(messaggio);
+        }
+    }
 }
+class Animali {
+    private String nome;
+    private int eta;
 
+    public Animali(String nome, int eta){
+        this.nome = nome;
+        this.eta = eta;
+    }
+    public String getNome(){
+        return this.nome;
+    }
+
+    public int getEta() {
+        return this.eta;
+    }
+}
